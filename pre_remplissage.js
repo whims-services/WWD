@@ -15,7 +15,7 @@ driver = new webdriver.Builder()
 // Ouverture de wordpress
 driver.get('localhost:8080/wp-admin/install.php');
 // Récupération & Sélection de la langue "Français"
-driver.findElement(by.xpath("//option[contains(text(), 'Français')]")).click();
+driver.findElement(by.xpath("//select[@id='language']")).sendKeys('Français');
 // Clic sur continuer
 driver.findElement(by.id('language-continue')).click();
 // Titre du site
@@ -43,4 +43,4 @@ driver.findElement(by.id('user_pass')).sendKeys("admin");
 // Connexion
 driver.findElement(by.id('wp-submit')).click();
 // Close browser
-// driver.close();
+driver.close();
