@@ -9,7 +9,7 @@ wordpress:
       WORDPRESS_DB_PASSWORD: Passw0rd
 
 wordpress_db:
-  image: mysql
+  image: mysql:5.7
   container_name: mysql
   environment:
       MYSQL_ROOT_PASSWORD: Passw0rd
