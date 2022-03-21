@@ -13,7 +13,7 @@ driver = new webdriver.Builder()
    .build();
 
 // Ouverture de wordpress
-driver.get('localhost:8080/wp-admin/install.php');
+driver.get('localhost/wp-admin/install.php');
 // Récupération & Sélection de la langue "Français"
 driver.findElement(by.xpath("//select[@id='language']")).sendKeys('Français');
 // Clic sur continuer
