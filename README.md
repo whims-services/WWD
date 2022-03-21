@@ -29,8 +29,6 @@ Download and Unzip the package which contain the following files :
 	docker-compose up -d
 
 2 - Complete install wordpress at http://localhost
-	 npm install
-	 node pre_remplissage.js
 
 3 - Install WP-CLI and Woocommerce then translate it to french language
 
