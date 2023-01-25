@@ -26,9 +26,10 @@ echo " ----------------------------------------------- "
 echo " 1 - Installation et activation de WooCommerce   "
 echo " ----------------------------------------------- "
 cd /var/www/html/
-mkdir wp-content/languages/plugins
+mkdir -p wp-content/languages/plugins
 wp plugin install woocommerce --allow-root
 wp plugin activate woocommerce --allow-root
+wp core install
 echo " "
 echo " WooCommerce Ok ! "
 echo " "  
